@@ -1,0 +1,62 @@
+GET http://127.0.0.1:3000/instalator/all
+
+###
+POST http://127.0.0.1:3000/instalator
+Content-Type: application/json
+
+{
+    "nume": "cineva",
+    "prenume": "altcineva",
+    "DepartamentId": 2
+}
+###
+DELETE http://127.0.0.1:3000/instalator
+Content-Type: application/json
+
+{
+    "id": 11
+}
+
+###
+GET http://127.0.0.1:3000/departament/all
+
+###
+POST http://127.0.0.1:3000/departament
+Content-Type: application/json
+
+{
+    "nume": "electrice",
+    "descriere": "220V"
+}
+
+###
+DELETE http://127.0.0.1:3000/departament
+Content-Type: application/json
+
+{
+    "id": 4
+}
+
+### pentru contact de aici
+
+POST http://127.0.0.1:3000/contact
+Content-Type: application/json
+
+{
+  "nume": "Turcu",
+  "prenume": "Iosif",
+  "compania": "SC TurcuInvest SRL",
+  "email": "iosif@tin.com",
+  "mesaj": "Salutare"
+}
+
+###
+GET http://127.0.0.1:3000/contact/all
+
+###
+DELETE http://127.0.0.1:3000/contact
+Content-Type: application/json
+
+{
+    "id": 1
+}
